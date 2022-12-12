@@ -1,0 +1,742 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/slavc001/ontologies/2022/6/untitled-ontology-80#"
+     xml:base="http://www.semanticweb.org/slavc001/ontologies/2022/6/untitled-ontology-80"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.purl.org/decide"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000111 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000111"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000112 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000112"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000114 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000114"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000116 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000116"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000117 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000117"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000118 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000118"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000119 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000412 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000136 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000136">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:range rdf:resource="http://www.purl.org/decide#Measurement"/>
+        <obo:IAO_0000112 xml:lang="en">This document is about information artifacts and their representations</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
+        <obo:IAO_0000115 xml:lang="en">A (currently) primitive relation that relates an information artifact to an entity.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">is_about is a (currently) primitive relation that relates an information artifact to an entity.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">7/6/2009 Alan Ruttenberg. Following discussion with Jonathan Rees, and introduction of &quot;mentions&quot; relation. Weaken the is_about relationship to be primitive. 
+
+We will try to build it back up by elaborating the various subproperties that are more precisely defined.
+
+Some currently missing phenomena that should be considered &quot;about&quot; are predications - &quot;The only person who knows the answer is sitting beside me&quot; , Allegory, Satire, and other literary forms that can be topical without explicitly mentioning the topic.</obo:IAO_0000116>
+        <obo:IAO_0000117 xml:lang="en">person:Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">Smith, Ceusters, Ruttenberg, 2000 years of philosophy</obo:IAO_0000119>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <rdfs:label xml:lang="en">is about</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.purl.org/decide#conductedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.purl.org/decide#conductedBy">
+        <rdfs:domain rdf:resource="http://www.purl.org/decide#Event"/>
+        <rdfs:range rdf:resource="http://www.purl.org/decide#Veterinarian"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.purl.org/decide#hasEvent -->
+
+    <owl:ObjectProperty rdf:about="http://www.purl.org/decide#hasEvent">
+        <rdfs:domain rdf:resource="http://www.purl.org/decide#Farm"/>
+        <rdfs:range rdf:resource="http://www.purl.org/decide#Event"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.purl.org/decide#hasEventType -->
+
+    <owl:ObjectProperty rdf:about="http://www.purl.org/decide#hasEventType">
+        <rdfs:domain rdf:resource="http://www.purl.org/decide#Event"/>
+        <rdfs:range rdf:resource="http://www.purl.org/decide#EventType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.purl.org/decide#hasMeasurement -->
+
+    <owl:ObjectProperty rdf:about="http://www.purl.org/decide#hasMeasurement">
+        <rdfs:domain rdf:resource="http://www.purl.org/decide#Event"/>
+        <rdfs:range rdf:resource="http://www.purl.org/decide#Measurement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.purl.org/decide#hasMeasurementType -->
+
+    <owl:ObjectProperty rdf:about="http://www.purl.org/decide#hasMeasurementType">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.purl.org/decide#Measurement"/>
+        <rdfs:range rdf:resource="http://www.purl.org/decide#MeasurementType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.purl.org/decide#hasResult -->
+
+    <owl:ObjectProperty rdf:about="http://www.purl.org/decide#hasResult">
+        <rdfs:domain rdf:resource="http://www.purl.org/decide#Sample"/>
+        <rdfs:range rdf:resource="http://www.purl.org/decide#SampleResult"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.purl.org/decide#hasSample -->
+
+    <owl:ObjectProperty rdf:about="http://www.purl.org/decide#hasSample">
+        <rdfs:domain rdf:resource="http://www.purl.org/decide#Event"/>
+        <rdfs:range rdf:resource="http://www.purl.org/decide#Sample"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.purl.org/decide#hasSampleType -->
+
+    <owl:ObjectProperty rdf:about="http://www.purl.org/decide#hasSampleType">
+        <rdfs:domain rdf:resource="http://www.purl.org/decide#Sample"/>
+        <rdfs:range rdf:resource="http://www.purl.org/decide#SampleType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.purl.org/decide#hasStatistics -->
+
+    <owl:ObjectProperty rdf:about="http://www.purl.org/decide#hasStatistics">
+        <rdfs:domain rdf:resource="http://www.purl.org/decide#Event"/>
+        <rdfs:range rdf:resource="http://www.purl.org/decide#Statistics"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.purl.org/decide#hasUnit -->
+
+    <owl:ObjectProperty rdf:about="http://www.purl.org/decide#hasUnit">
+        <rdfs:domain rdf:resource="http://www.purl.org/decide#Measurement"/>
+        <rdfs:range rdf:resource="http://www.purl.org/decide#Unit"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.purl.org/decide#identifies -->
+
+    <owl:ObjectProperty rdf:about="http://www.purl.org/decide#identifies">
+        <rdfs:domain rdf:resource="http://www.purl.org/decide#Event"/>
+        <rdfs:domain rdf:resource="http://www.purl.org/decide#Sample"/>
+        <rdfs:domain rdf:resource="http://www.purl.org/decide#SampleResult"/>
+        <rdfs:range rdf:resource="http://www.purl.org/decide#Pathogen"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.purl.org/decide#involves -->
+
+    <owl:ObjectProperty rdf:about="http://www.purl.org/decide#involves">
+        <rdfs:domain rdf:resource="http://www.purl.org/decide#Event"/>
+        <rdfs:range rdf:resource="http://www.purl.org/decide#AnimalGroup"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000129 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/STATO_0000129">
+        <rdfs:domain rdf:resource="http://www.purl.org/decide#Measurement"/>
+        <rdfs:label>has value</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.purl.org/decide#age -->
+
+    <owl:DatatypeProperty rdf:about="http://www.purl.org/decide#age">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.purl.org/decide#AnimalGroup"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.purl.org/decide#animalType -->
+
+    <owl:DatatypeProperty rdf:about="http://www.purl.org/decide#animalType">
+        <rdfs:domain rdf:resource="http://www.purl.org/decide#AnimalGroup"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.purl.org/decide#birthDay -->
+
+    <owl:DatatypeProperty rdf:about="http://www.purl.org/decide#birthDay">
+        <rdfs:domain rdf:resource="http://www.purl.org/decide#AnimalGroup"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.purl.org/decide#eventDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.purl.org/decide#eventDate">
+        <rdfs:domain rdf:resource="http://www.purl.org/decide#Event"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.purl.org/decide#geoLocation -->
+
+    <owl:DatatypeProperty rdf:about="http://www.purl.org/decide#geoLocation">
+        <rdfs:domain rdf:resource="http://www.purl.org/decide#Farm"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.purl.org/decide#id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.purl.org/decide#id">
+        <rdfs:domain rdf:resource="http://www.purl.org/decide#AnimalGroup"/>
+        <rdfs:domain rdf:resource="http://www.purl.org/decide#Farm"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.purl.org/decide#localAuthority -->
+
+    <owl:DatatypeProperty rdf:about="http://www.purl.org/decide#localAuthority"/>
+    
+
+
+    <!-- http://www.purl.org/decide#name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.purl.org/decide#name">
+        <rdfs:domain rdf:resource="http://www.purl.org/decide#Farm"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.purl.org/decide#numberOfAnimals -->
+
+    <owl:DatatypeProperty rdf:about="http://www.purl.org/decide#numberOfAnimals">
+        <rdfs:domain rdf:resource="http://www.purl.org/decide#AnimalGroup"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.purl.org/decide#postalCode -->
+
+    <owl:DatatypeProperty rdf:about="http://www.purl.org/decide#postalCode">
+        <rdfs:domain rdf:resource="http://www.purl.org/decide#Farm"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.purl.org/decide#result -->
+
+    <owl:DatatypeProperty rdf:about="http://www.purl.org/decide#result">
+        <rdfs:domain rdf:resource="http://www.purl.org/decide#SampleResult"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.purl.org/decide#species -->
+
+    <owl:DatatypeProperty rdf:about="http://www.purl.org/decide#species">
+        <rdfs:domain rdf:resource="http://www.purl.org/decide#AnimalGroup"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.purl.org/decide#startMonth -->
+
+    <owl:DatatypeProperty rdf:about="http://www.purl.org/decide#startMonth">
+        <rdfs:domain rdf:resource="http://www.purl.org/decide#AnimalGroup"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.purl.org/decide#startWeight -->
+
+    <owl:DatatypeProperty rdf:about="http://www.purl.org/decide#startWeight">
+        <rdfs:domain rdf:resource="http://www.purl.org/decide#AnimalGroup"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/2003/01/geo/wgs84_pos#lat -->
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#lat">
+        <rdfs:domain rdf:resource="http://www.purl.org/decide#Farm"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/2003/01/geo/wgs84_pos#long -->
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#long">
+        <rdfs:domain rdf:resource="http://www.purl.org/decide#Farm"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000027 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000027">
+        <rdfs:label>data item</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000109 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000109">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:label>measurement datum</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000679 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000679">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <obo:IAO_0000111>average value</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
+        <obo:IAO_0000115 xml:lang="en">A  data item that is produced as the output of an averaging data transformation and represents the average value of the input data.</obo:IAO_0000115>
+        <obo:IAO_0000117>PERSON: James Malone</obo:IAO_0000117>
+        <obo:IAO_0000117>PERSON: Monnie McGee</obo:IAO_0000117>
+        <obo:IAO_0000118>arithmetic mean</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">average value</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/VO_0000150 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/VO_0000150">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/VO_0000555"/>
+        <rdfs:label>antibody titer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/VO_0000555 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/VO_0000555">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
+        <obo:IAO_0000115>A titer (or titre) is a measure of concentration. Titer testing employs serial dilution to obtain approximate quantitative information from an analytical procedure that inherently only evaluates as positive or negative. The titer corresponds to the highest dilution factor that still yields a positive reading; for example, positive readings in the first 8 serial twofold dilutions translate into a titer of 1:256.</obo:IAO_0000115>
+        <obo:IAO_0000117>YH</obo:IAO_0000117>
+        <obo:IAO_0000119>WEB:http://en.wikipedia.org/wiki/Titer</obo:IAO_0000119>
+        <rdfs:label>titer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/decide#AnimalGroup -->
+
+    <owl:Class rdf:about="http://www.purl.org/decide#AnimalGroup"/>
+    
+
+
+    <!-- http://www.purl.org/decide#Event -->
+
+    <owl:Class rdf:about="http://www.purl.org/decide#Event"/>
+    
+
+
+    <!-- http://www.purl.org/decide#EventType -->
+
+    <owl:Class rdf:about="http://www.purl.org/decide#EventType"/>
+    
+
+
+    <!-- http://www.purl.org/decide#Farm -->
+
+    <owl:Class rdf:about="http://www.purl.org/decide#Farm"/>
+    
+
+
+    <!-- http://www.purl.org/decide#Measurement -->
+
+    <owl:Class rdf:about="http://www.purl.org/decide#Measurement"/>
+    
+
+
+    <!-- http://www.purl.org/decide#MeasurementType -->
+
+    <owl:Class rdf:about="http://www.purl.org/decide#MeasurementType"/>
+    
+
+
+    <!-- http://www.purl.org/decide#Pathogen -->
+
+    <owl:Class rdf:about="http://www.purl.org/decide#Pathogen"/>
+    
+
+
+    <!-- http://www.purl.org/decide#ProductionCycleTime -->
+
+    <owl:Class rdf:about="http://www.purl.org/decide#ProductionCycleTime"/>
+    
+
+
+    <!-- http://www.purl.org/decide#Sample -->
+
+    <owl:Class rdf:about="http://www.purl.org/decide#Sample"/>
+    
+
+
+    <!-- http://www.purl.org/decide#SampleResult -->
+
+    <owl:Class rdf:about="http://www.purl.org/decide#SampleResult"/>
+    
+
+
+    <!-- http://www.purl.org/decide#SampleType -->
+
+    <owl:Class rdf:about="http://www.purl.org/decide#SampleType"/>
+    
+
+
+    <!-- http://www.purl.org/decide#Statistics -->
+
+    <owl:Class rdf:about="http://www.purl.org/decide#Statistics"/>
+    
+
+
+    <!-- http://www.purl.org/decide#Unit -->
+
+    <owl:Class rdf:about="http://www.purl.org/decide#Unit"/>
+    
+
+
+    <!-- http://www.purl.org/decide#Veterinarian -->
+
+    <owl:Class rdf:about="http://www.purl.org/decide#Veterinarian"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/degreeCelsius -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/degreeCelsius">
+        <rdf:type rdf:resource="http://www.purl.org/decide#Unit"/>
+        <rdfs:label>degrees Celsius</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/kilogram -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/kilogram">
+        <rdf:type rdf:resource="http://www.purl.org/decide#Unit"/>
+        <rdfs:label>kilogram</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/milligramPerCubicmetre -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/milligramPerCubicmetre">
+        <rdf:type rdf:resource="http://www.purl.org/decide#Unit"/>
+        <rdfs:label>milligram Per Cubicmetre</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/tonne -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/tonne">
+        <rdf:type rdf:resource="http://www.purl.org/decide#Unit"/>
+        <rdfs:label>tonne</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.purl.org/decide#Biomass -->
+
+    <owl:NamedIndividual rdf:about="http://www.purl.org/decide#Biomass">
+        <rdf:type rdf:resource="http://www.purl.org/decide#MeasurementType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.purl.org/decide#Birth -->
+
+    <owl:NamedIndividual rdf:about="http://www.purl.org/decide#Birth">
+        <rdf:type rdf:resource="http://www.purl.org/decide#EventType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.purl.org/decide#BovineCoronaVirus -->
+
+    <owl:NamedIndividual rdf:about="http://www.purl.org/decide#BovineCoronaVirus">
+        <rdf:type rdf:resource="http://www.purl.org/decide#Pathogen"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.purl.org/decide#BovineRespiratorySyncitialVirus -->
+
+    <owl:NamedIndividual rdf:about="http://www.purl.org/decide#BovineRespiratorySyncitialVirus">
+        <rdf:type rdf:resource="http://www.purl.org/decide#Pathogen"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.purl.org/decide#HistophilusSomni -->
+
+    <owl:NamedIndividual rdf:about="http://www.purl.org/decide#HistophilusSomni">
+        <rdf:type rdf:resource="http://www.purl.org/decide#Pathogen"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.purl.org/decide#LabProcedure -->
+
+    <owl:NamedIndividual rdf:about="http://www.purl.org/decide#LabProcedure">
+        <rdf:type rdf:resource="http://www.purl.org/decide#EventType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.purl.org/decide#MannheimiaHaemolytica -->
+
+    <owl:NamedIndividual rdf:about="http://www.purl.org/decide#MannheimiaHaemolytica">
+        <rdf:type rdf:resource="http://www.purl.org/decide#Pathogen"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.purl.org/decide#Mass -->
+
+    <owl:NamedIndividual rdf:about="http://www.purl.org/decide#Mass">
+        <rdf:type rdf:resource="http://www.purl.org/decide#MeasurementType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.purl.org/decide#MeasurementFishFarm -->
+
+    <owl:NamedIndividual rdf:about="http://www.purl.org/decide#MeasurementFishFarm">
+        <rdf:type rdf:resource="http://www.purl.org/decide#EventType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.purl.org/decide#Mortality -->
+
+    <owl:NamedIndividual rdf:about="http://www.purl.org/decide#Mortality">
+        <rdf:type rdf:resource="http://www.purl.org/decide#MeasurementType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.purl.org/decide#MycoplasmaBovis -->
+
+    <owl:NamedIndividual rdf:about="http://www.purl.org/decide#MycoplasmaBovis">
+        <rdf:type rdf:resource="http://www.purl.org/decide#Pathogen"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.purl.org/decide#Other -->
+
+    <owl:NamedIndividual rdf:about="http://www.purl.org/decide#Other">
+        <rdf:type rdf:resource="http://www.purl.org/decide#Pathogen"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.purl.org/decide#ParainfluenzaType3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.purl.org/decide#ParainfluenzaType3">
+        <rdf:type rdf:resource="http://www.purl.org/decide#Pathogen"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.purl.org/decide#PasteurellaMultocida -->
+
+    <owl:NamedIndividual rdf:about="http://www.purl.org/decide#PasteurellaMultocida">
+        <rdf:type rdf:resource="http://www.purl.org/decide#Pathogen"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.purl.org/decide#SeaLiceCount -->
+
+    <owl:NamedIndividual rdf:about="http://www.purl.org/decide#SeaLiceCount">
+        <rdf:type rdf:resource="http://www.purl.org/decide#MeasurementType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.purl.org/decide#SeaSalinity -->
+
+    <owl:NamedIndividual rdf:about="http://www.purl.org/decide#SeaSalinity">
+        <rdf:type rdf:resource="http://www.purl.org/decide#MeasurementType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.purl.org/decide#SeaTemperature -->
+
+    <owl:NamedIndividual rdf:about="http://www.purl.org/decide#SeaTemperature">
+        <rdf:type rdf:resource="http://www.purl.org/decide#MeasurementType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.purl.org/decide#Slaughter -->
+
+    <owl:NamedIndividual rdf:about="http://www.purl.org/decide#Slaughter">
+        <rdf:type rdf:resource="http://www.purl.org/decide#EventType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.purl.org/decide#massPerUnitArea -->
+
+    <owl:NamedIndividual rdf:about="http://www.purl.org/decide#massPerUnitArea">
+        <rdf:type rdf:resource="http://www.purl.org/decide#Unit"/>
+        <rdfs:comment>kg/m3</rdfs:comment>
+        <rdfs:label>mass density</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.purl.org/decide#partPerTrillion -->
+
+    <owl:NamedIndividual rdf:about="http://www.purl.org/decide#partPerTrillion">
+        <rdf:type rdf:resource="http://www.purl.org/decide#Unit"/>
+        <rdfs:label>part per Trillion</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.purl.org/decide#ratePer1000 -->
+
+    <owl:NamedIndividual rdf:about="http://www.purl.org/decide#ratePer1000">
+        <rdf:type rdf:resource="http://www.purl.org/decide#Unit"/>
+        <rdfs:label>rate per 1000</rdfs:label>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
