@@ -1,0 +1,978 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/slavc001/ontologies/2022/6/untitled-ontology-80#"
+     xml:base="http://www.semanticweb.org/slavc001/ontologies/2022/6/untitled-ontology-80"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:decide="http://www.purl.org/decide#">
+    <owl:Ontology rdf:about="http://www.purl.org/decide">
+        <obo:IAO_0000117>Elena Slavco</obo:IAO_0000117>
+        <obo:IAO_0000117>PERSON: Saba Noor</obo:IAO_0000117>
+        <obo:IAO_0000118>DECIDE Aquaculture and Livestock Ontology</obo:IAO_0000118>
+        <dc:contributor>Elena Salvaco
+Miel Hostens</dc:contributor>
+        <dc:creator>Saba Noor</dc:creator>
+        <decide:CS56>DECIDE Aquaculture and Livestock Ontology</decide:CS56>
+        <rdfs:comment xml:lang="en">This ontology was developed as part of the DECIDE EU 2020 project to support data integration, classification, and knowledge modeling in the domain of aquaculture. 
+It provides a structured, upper-level framework for representing species (such as salmon, cattle, poultry, and pigs), production systems, measurement events, and health-related information including clinical signs, diagnostics, and interventions.
+
+The ontology is designed to be modular and extensible, and it can be adapted or reused for terrestrial livestock species such as cattle, poultry, and pigs. 
+seeAlso: LivestockHealthOntology
+https://bioportal.bioontology.org/ontologies/LHO 
+
+Its purpose is to facilitate harmonized data representation for improved disease surveillance, risk assessment, and decision support across livestock sectors.</rdfs:comment>
+        <rdfs:isDefinedBy>http://www.purl.org/decide#</rdfs:isDefinedBy>
+        <rdfs:label>DECIDE Aquaculture and Livestock Ontology</rdfs:label>
+        <rdfs:seeAlso>Extend DECIDE ontology for terrestrial livestock species such as cattle, poultry, and pigs. 
+ https://bioportal.bioontology.org/ontologies/LHO</rdfs:seeAlso>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000111 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000111">
+        <rdfs:comment>A textual abbreviation or acronym for a term, class, or property.</rdfs:comment>
+        <rdfs:label>has Abbrevation</rdfs:label>
+        <rdfs:seeAlso>Information Artifact Ontology (IAO)</rdfs:seeAlso>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000112 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000112">
+        <rdfs:label>A string that provides a usage example of a class, property, or other ontology element to help users understand how it is applied.</rdfs:label>
+        <rdfs:label>example of usage</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000114 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000114">
+        <rdfs:comment>Indicates the editorial or curation status of an ontology term or axiom.</rdfs:comment>
+        <rdfs:label>has curation status</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
+        <rdfs:comment>A textual definition that precisely specifies the meaning of a term or class</rdfs:comment>
+        <rdfs:label>definition</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000116 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000116">
+        <rdfs:comment>A note or comment intended for ontology editors and maintainers, not for general users of the ontology.</rdfs:comment>
+        <rdfs:label>editor note</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000117 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000117">
+        <rdfs:label>The person primarily responsible for the creation or curation of a given ontology term.</rdfs:label>
+        <rdfs:label>term editor</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000118 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000118">
+        <obo:IAO_0000115>A farm is an agricultural or aquacultural establishment where crops are cultivated, terrestrial livestock and/or aquatic species (such as fish or shellfish) are raised for food production or other commercial, research, or conservation purposes.</obo:IAO_0000115>
+        <rdfs:label>A term or phrase that may be used as a synonym or alternate label for a given ontology entity, especially useful for searching and term matching.</rdfs:label>
+        <rdfs:label>alternative term</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000119 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119">
+        <rdfs:comment>A reference (such as a publication, URL, or ontology) that identifies where the definition of a term originated from.</rdfs:comment>
+        <rdfs:label>definition source</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000412 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412">
+        <obo:IAO_0000412>http://purl.obolibrary.org/obo/IAO_0000412</obo:IAO_0000412>
+        <rdfs:comment>An annotation indicating the source ontology or resource from which a given term was imported.</rdfs:comment>
+        <rdfs:label>imported from</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/contributor -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/contributor">
+        <obo:IAO_0000115>Person who contribute to create and define ontology terms</obo:IAO_0000115>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator">
+        <obo:IAO_0000115>Persons involved to create ontology</obo:IAO_0000115>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.purl.org/decide#CS56 -->
+
+    <owl:AnnotationProperty rdf:about="http://www.purl.org/decide#CS56">
+        <rdfs:comment>Ontology Name</rdfs:comment>
+        <rdfs:label xml:lang="en">hasName</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#SameAs -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#SameAs"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#exactMatch -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#exactMatch">
+        <obo:IAO_0000115>Term Matching</obo:IAO_0000115>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000136 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000136">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:range rdf:resource="http://www.purl.org/decide#Measurement"/>
+        <obo:IAO_0000112 xml:lang="en">This document is about information artifacts and their representations</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
+        <obo:IAO_0000115 xml:lang="en">A (currently) primitive relation that relates an information artifact to an entity.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">is_about is a (currently) primitive relation that relates an information artifact to an entity.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">7/6/2009 Alan Ruttenberg. Following discussion with Jonathan Rees, and introduction of &quot;mentions&quot; relation. Weaken the is_about relationship to be primitive. 
+
+We will try to build it back up by elaborating the various subproperties that are more precisely defined.
+
+Some currently missing phenomena that should be considered &quot;about&quot; are predications - &quot;The only person who knows the answer is sitting beside me&quot; , Allegory, Satire, and other literary forms that can be topical without explicitly mentioning the topic.</obo:IAO_0000116>
+        <obo:IAO_0000117 xml:lang="en">person:Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">Smith, Ceusters, Ruttenberg, 2000 years of philosophy</obo:IAO_0000119>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <rdfs:label xml:lang="en">is about</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.purl.org/decide#conductedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.purl.org/decide#conductedBy">
+        <rdfs:domain rdf:resource="http://www.purl.org/decide#Event"/>
+        <rdfs:range rdf:resource="http://www.purl.org/decide#Veterinarian"/>
+        <rdfs:comment>Relates an event (such as a health check, sampling, diagnosis, or treatment) to the veterinarian who conducted it</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.purl.org/decide#hasEvent -->
+
+    <owl:ObjectProperty rdf:about="http://www.purl.org/decide#hasEvent">
+        <rdfs:domain rdf:resource="http://www.purl.org/decide#Farm"/>
+        <rdfs:range rdf:resource="http://www.purl.org/decide#Event"/>
+        <rdfs:comment>Relates a Farm to an Event that occurred at or is associated with that farm. 
+    Events may include veterinary visits, sampling, inspections, treatments, or production-related actions.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.purl.org/decide#hasEventType -->
+
+    <owl:ObjectProperty rdf:about="http://www.purl.org/decide#hasEventType">
+        <rdfs:domain rdf:resource="http://www.purl.org/decide#Event"/>
+        <rdfs:range rdf:resource="http://www.purl.org/decide#EventType"/>
+        <rdfs:comment>Associates an Event with its EventType, describing the nature or category of the event 
+    (e.g., Sampling, Treatment, Inspection, Vaccination).</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.purl.org/decide#hasMeasurement -->
+
+    <owl:ObjectProperty rdf:about="http://www.purl.org/decide#hasMeasurement">
+        <rdfs:domain rdf:resource="http://www.purl.org/decide#Event"/>
+        <rdfs:range rdf:resource="http://www.purl.org/decide#Measurement"/>
+        <rdfs:comment>Links an Event to one or more Measurement instances that record quantitative or qualitative observations made during the event. For Exmaple Antibiotic dosage, Body weight, Temperature, Pathogen load, Water quality indicators</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.purl.org/decide#hasMeasurementType -->
+
+    <owl:ObjectProperty rdf:about="http://www.purl.org/decide#hasMeasurementType">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.purl.org/decide#Measurement"/>
+        <rdfs:range rdf:resource="http://www.purl.org/decide#MeasurementType"/>
+        <rdfs:comment>Associates a Measurement with a MeasurementType that describes what kind of value is being measured 
+    (e.g., body weight, temperature, pH level,)</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.purl.org/decide#hasResult -->
+
+    <owl:ObjectProperty rdf:about="http://www.purl.org/decide#hasResult">
+        <rdfs:domain rdf:resource="http://www.purl.org/decide#Sample"/>
+        <rdfs:range rdf:resource="http://www.purl.org/decide#SampleResult"/>
+        <rdfs:comment>link Sample with SampleResults</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.purl.org/decide#hasSample -->
+
+    <owl:ObjectProperty rdf:about="http://www.purl.org/decide#hasSample">
+        <rdfs:domain rdf:resource="http://www.purl.org/decide#Event"/>
+        <rdfs:range rdf:resource="http://www.purl.org/decide#Sample"/>
+        <rdfs:comment>Relates an Event to a Sample collected or used during that event. 
+    Typical in sampling, diagnostic, or surveillance activities in livestock and aquaculture systems.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.purl.org/decide#hasSampleType -->
+
+    <owl:ObjectProperty rdf:about="http://www.purl.org/decide#hasSampleType">
+        <rdfs:domain rdf:resource="http://www.purl.org/decide#Sample"/>
+        <rdfs:range rdf:resource="http://www.purl.org/decide#SampleType"/>
+        <rdfs:comment>Associates a Sample with a SampleType indicating the kind of material collected, such as blood, tissue, feces, or water.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.purl.org/decide#hasStatistics -->
+
+    <owl:ObjectProperty rdf:about="http://www.purl.org/decide#hasStatistics">
+        <rdfs:domain rdf:resource="http://www.purl.org/decide#Event"/>
+        <rdfs:range rdf:resource="http://www.purl.org/decide#Statistics"/>
+        <rdfs:comment>Links an Event to one or more Statistic instances that summarize outcomes or observations related to that event. 
+    This may include prevalence, mortality rate, average weight, or test positivity.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.purl.org/decide#hasUnit -->
+
+    <owl:ObjectProperty rdf:about="http://www.purl.org/decide#hasUnit">
+        <rdfs:domain rdf:resource="http://www.purl.org/decide#Measurement"/>
+        <rdfs:range rdf:resource="http://www.purl.org/decide#Unit"/>
+        <rdfs:comment>Link Measurement to Unit</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.purl.org/decide#identifies -->
+
+    <owl:ObjectProperty rdf:about="http://www.purl.org/decide#identifies">
+        <rdfs:domain rdf:resource="http://www.purl.org/decide#Event"/>
+        <rdfs:domain rdf:resource="http://www.purl.org/decide#Sample"/>
+        <rdfs:domain rdf:resource="http://www.purl.org/decide#SampleResult"/>
+        <rdfs:range rdf:resource="http://www.purl.org/decide#Pathogen"/>
+        <rdfs:comment>Links a SampleResult to the Pathogen that was identified in the sample. 
+    This is used to record confirmed detections of pathogens through diagnostic testing.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.purl.org/decide#involves -->
+
+    <owl:ObjectProperty rdf:about="http://www.purl.org/decide#involves">
+        <rdfs:domain rdf:resource="http://www.purl.org/decide#Event"/>
+        <rdfs:range rdf:resource="http://www.purl.org/decide#SpeciesGroup"/>
+        <rdfs:comment>Relates an Event to the SpeciesGroup that was involved in or affected by the event.
+    This helps to contextualize the event with respect to the biological group it targeted.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000129 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/STATO_0000129">
+        <rdfs:domain rdf:resource="http://www.purl.org/decide#Measurement"/>
+        <rdfs:comment>measurement value</rdfs:comment>
+        <rdfs:label>has value</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.purl.org/decide#age -->
+
+    <owl:DatatypeProperty rdf:about="http://www.purl.org/decide#age">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.purl.org/decide#SpeciesGroup"/>
+        <rdfs:comment>Age data property</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.purl.org/decide#birthDay -->
+
+    <owl:DatatypeProperty rdf:about="http://www.purl.org/decide#birthDay">
+        <rdfs:domain rdf:resource="http://www.purl.org/decide#SpeciesGroup"/>
+        <rdfs:comment>Birthday data property</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.purl.org/decide#eventDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.purl.org/decide#eventDate">
+        <rdfs:domain rdf:resource="http://www.purl.org/decide#Event"/>
+        <rdfs:comment>data property to define event date</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.purl.org/decide#geoLocation -->
+
+    <owl:DatatypeProperty rdf:about="http://www.purl.org/decide#geoLocation">
+        <rdfs:domain rdf:resource="http://www.purl.org/decide#Farm"/>
+        <rdfs:comment>A geographic location .</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.purl.org/decide#id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.purl.org/decide#id">
+        <rdfs:domain rdf:resource="http://www.purl.org/decide#Farm"/>
+        <rdfs:domain rdf:resource="http://www.purl.org/decide#SpeciesGroup"/>
+        <rdfs:comment>Indentification of Farm or Spceis group</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.purl.org/decide#localAuthority -->
+
+    <owl:DatatypeProperty rdf:about="http://www.purl.org/decide#localAuthority">
+        <rdfs:comment>Local Authority in region</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.purl.org/decide#name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.purl.org/decide#name">
+        <rdfs:domain rdf:resource="http://www.purl.org/decide#Farm"/>
+        <rdfs:comment>Particular Fame name</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.purl.org/decide#numberOfAnimals -->
+
+    <owl:DatatypeProperty rdf:about="http://www.purl.org/decide#numberOfAnimals">
+        <rdfs:domain rdf:resource="http://www.purl.org/decide#SpeciesGroup"/>
+        <rdfs:comment>Amount of animal in a farm, herd or group</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.purl.org/decide#postalCode -->
+
+    <owl:DatatypeProperty rdf:about="http://www.purl.org/decide#postalCode">
+        <rdfs:domain rdf:resource="http://www.purl.org/decide#Farm"/>
+        <rdfs:comment>Farm Postal Code value data property</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.purl.org/decide#result -->
+
+    <owl:DatatypeProperty rdf:about="http://www.purl.org/decide#result">
+        <rdfs:domain rdf:resource="http://www.purl.org/decide#SampleResult"/>
+        <rdfs:comment>A data property for SampleResult that is either 0 or 1 .</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.purl.org/decide#species -->
+
+    <owl:DatatypeProperty rdf:about="http://www.purl.org/decide#species">
+        <rdfs:domain rdf:resource="http://www.purl.org/decide#SpeciesGroup"/>
+        <rdfs:comment>Data property like Cattle, Poultry, Pig and Salmon belongs to Species</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.purl.org/decide#speciesType -->
+
+    <owl:DatatypeProperty rdf:about="http://www.purl.org/decide#speciesType">
+        <rdfs:domain rdf:resource="http://www.purl.org/decide#SpeciesGroup"/>
+        <rdfs:comment>Indicates the general production system or environment for a species, such as &apos;Aquaculture&apos; or &apos;Terrestrial&apos;. This property can be used to categorize species based on farming context.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/2003/01/geo/wgs84_pos#lat -->
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#lat">
+        <rdfs:domain rdf:resource="http://www.purl.org/decide#Farm"/>
+        <rdfs:comment>Farm location Latitude value</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/2003/01/geo/wgs84_pos#long -->
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#long">
+        <rdfs:domain rdf:resource="http://www.purl.org/decide#Farm"/>
+        <rdfs:comment>Farm location longitude value</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://aims.fao.org/aos/agrovoc/c_6145 -->
+
+    <owl:Class rdf:about="http://aims.fao.org/aos/agrovoc/c_6145">
+        <rdfs:subClassOf rdf:resource="http://www.purl.org/decide#SpeciesGroup"/>
+        <obo:IAO_0000115 xml:lang="en">All domesticated birds used for the production of meat or eggs for consumption, for the production of other commercial products, for restocking, supplies of game, or for breeding these categories of birds.</obo:IAO_0000115>
+        <obo:IAO_0000412>https://agrovoc.fao.org/browse/agrovoc/en/page/c_6145</obo:IAO_0000412>
+        <rdfs:label>Poultry</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://aims.fao.org/aos/agrovoc/c_6756 -->
+
+    <owl:Class rdf:about="http://aims.fao.org/aos/agrovoc/c_6756">
+        <rdfs:subClassOf rdf:resource="http://www.purl.org/decide#SpeciesGroup"/>
+        <obo:IAO_0000112>Atlantic salmon (Salmo salar) are frequently farmed in marine cages and monitored for growth, health, and disease events such as sea lice infestation or viral infections.</obo:IAO_0000112>
+        <obo:IAO_0000118>Atlantic salmon
+Pacific salmon</obo:IAO_0000118>
+        <obo:IAO_0000119>https://agrovoc.fao.org/browse/agrovoc/en/page/c_6756</obo:IAO_0000119>
+        <obo:IAO_0000412>https://agrovoc.fao.org/browse/agrovoc/en/page/c_6756</obo:IAO_0000412>
+        <rdfs:comment>A common name for several species of ray-finned fish in the family Salmonidae, widely farmed in aquaculture systems for food production. Salmon are anadromous, meaning they hatch in freshwater, migrate to the ocean, and return to freshwater to spawn.</rdfs:comment>
+        <rdfs:label>Salmon</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://aims.fao.org/aos/agrovoc/c_7555 -->
+
+    <owl:Class rdf:about="http://aims.fao.org/aos/agrovoc/c_7555">
+        <rdfs:subClassOf rdf:resource="http://www.purl.org/decide#SpeciesGroup"/>
+        <obo:IAO_0000115>The pig (Sus domesticus), often called swine, hog, or domestic pig</obo:IAO_0000115>
+        <obo:IAO_0000118>Swine</obo:IAO_0000118>
+        <obo:IAO_0000119>https://aims.fao.org/aos/agrovoc/c_7555.html</obo:IAO_0000119>
+        <obo:IAO_0000412>https://aims.fao.org/aos/agrovoc/c_7555.html</obo:IAO_0000412>
+        <rdfs:label>Pig</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000027 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000027">
+        <obo:IAO_0000412>obo:IAO_0000119  &quot;http://purl.obolibrary.org/obo/iao.owl&quot; .</obo:IAO_0000412>
+        <rdfs:comment xml:lang="en">A data item is an information content entity that is part of a dataset, record, or other data structure, and typically expressed in a structured format such as a number, string, or symbol.</rdfs:comment>
+        <rdfs:label>data item</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000109 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000109">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <obo:IAO_0000119>IAO_0000109</obo:IAO_0000119>
+        <obo:IAO_0000412>obo:IAO_0000119  &quot;http://purl.obolibrary.org/obo/iao.owl&quot; .</obo:IAO_0000412>
+        <rdfs:comment>An information content entity that specifies how a realizable entity is concretized, and that is not concretized in the specification itself.&quot;</rdfs:comment>
+        <rdfs:label>measurement datum</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000679 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000679">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <obo:IAO_0000111>average value</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
+        <obo:IAO_0000115 xml:lang="en">A  data item that is produced as the output of an averaging data transformation and represents the average value of the input data.</obo:IAO_0000115>
+        <obo:IAO_0000117>PERSON: James Malone</obo:IAO_0000117>
+        <obo:IAO_0000117>PERSON: Monnie McGee</obo:IAO_0000117>
+        <obo:IAO_0000118>arithmetic mean</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">average value</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/VO_0000150 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/VO_0000150">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/VO_0000555"/>
+        <rdfs:comment xml:lang="en">A measurement result that reflects the level of antibodies in a sample (usually blood), often after vaccination or infection</rdfs:comment>
+        <rdfs:label>antibody titer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/VO_0000555 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/VO_0000555">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
+        <obo:IAO_0000115>A titer (or titre) is a measure of concentration. Titer testing employs serial dilution to obtain approximate quantitative information from an analytical procedure that inherently only evaluates as positive or negative. The titer corresponds to the highest dilution factor that still yields a positive reading; for example, positive readings in the first 8 serial twofold dilutions translate into a titer of 1:256.</obo:IAO_0000115>
+        <obo:IAO_0000117>YH</obo:IAO_0000117>
+        <obo:IAO_0000119>WEB:http://en.wikipedia.org/wiki/Titer</obo:IAO_0000119>
+        <obo:IAO_0000412>http://purl.obolibrary.org/obo/vo.owl</obo:IAO_0000412>
+        <rdfs:label>titer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ncbi.nlm.nih.gov/taxonomy/9913 -->
+
+    <owl:Class rdf:about="http://www.ncbi.nlm.nih.gov/taxonomy/9913">
+        <rdfs:subClassOf rdf:resource="http://www.purl.org/decide#SpeciesGroup"/>
+        <obo:IAO_0000119>https://agrovoc.fao.org/browse/agrovoc/en/page/c_1391</obo:IAO_0000119>
+        <obo:IAO_0000412>https://agrovoc.fao.org/browse/agrovoc/en/page/c_1391</obo:IAO_0000412>
+        <rdfs:comment>A collective term for bovine livestock.</rdfs:comment>
+        <rdfs:label>Cattle</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/decide#Event -->
+
+    <owl:Class rdf:about="http://www.purl.org/decide#Event">
+        <obo:IAO_0000115>A class representing any occurrence or activity related to aquaculture or livestock management, such as disease outbreaks, treatments, movements, or inspections.</obo:IAO_0000115>
+        <obo:IAO_0000117>PERSON: Miel</obo:IAO_0000117>
+        <obo:IAO_0000117>PERSON: Saba</obo:IAO_0000117>
+        <obo:IAO_0000119>https://github.com/BFO-ontology/BFO</obo:IAO_0000119>
+        <rdfs:comment xml:lang="en">A class representing any occurrence or activity related to aquaculture or livestock management, such as disease outbreaks, treatments, movements, or inspections.</rdfs:comment>
+        <rdfs:label>Event</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/decide#EventType -->
+
+    <owl:Class rdf:about="http://www.purl.org/decide#EventType">
+        <obo:IAO_0000117>PERSON: Miel</obo:IAO_0000117>
+        <obo:IAO_0000117>PERSON: Saba</obo:IAO_0000117>
+        <rdfs:comment xml:lang="en">Class Event has Event Type and it refer to different types of events related to livestock or farming. For example, &quot;slaughter&quot; could be one event type, and &quot;birth,&quot; &quot;vaccination,&quot; or &quot;disease outbreak&quot; could be other event types.</rdfs:comment>
+        <rdfs:label xml:lang="en">EventType</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/decide#Farm -->
+
+    <owl:Class rdf:about="http://www.purl.org/decide#Farm">
+        <obo:IAO_0000117>PERSON: Saba</obo:IAO_0000117>
+        <rdfs:comment xml:lang="en">A farm is an agricultural or aquacultural establishment where crops are cultivated, terrestrial livestock and/or aquatic species (such as fish or shellfish) are raised for food production or other commercial, research, or conservation purposes.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/decide#Measurement -->
+
+    <owl:Class rdf:about="http://www.purl.org/decide#Measurement">
+        <obo:IAO_0000117>PERSON: Saba</obo:IAO_0000117>
+        <rdfs:comment xml:lang="en">A record of an observed or measured value related to a specific characteristic (such as weight, age, or temperature) of an animal, population, environment, or system, applicable to both terrestrial livestock and aquaculture species</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/decide#MeasurementType -->
+
+    <owl:Class rdf:about="http://www.purl.org/decide#MeasurementType">
+        <obo:IAO_0000117>PERSON: Saba</obo:IAO_0000117>
+        <rdfs:comment xml:lang="en">A classification of measurement, such as weight or age</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/decide#Pathogen -->
+
+    <owl:Class rdf:about="http://www.purl.org/decide#Pathogen">
+        <obo:IAO_0000115>A material entity with a pathogenic disposition.</obo:IAO_0000115>
+        <obo:IAO_0000119>http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C80324</obo:IAO_0000119>
+        <obo:IAO_0000119>http://purl.obolibrary.org/obo/IDO_0000528</obo:IAO_0000119>
+        <obo:IAO_0000119>http://www.purl.org/infection_trans#Pathogen</obo:IAO_0000119>
+        <obo:IAO_0000119>https://agrovoc.fao.org/browse/agrovoc/en/page/c_5630</obo:IAO_0000119>
+        <rdfs:SameAs>http://purl.obolibrary.org/obo/IDO_0000528</rdfs:SameAs>
+        <rdfs:comment xml:lang="en">A pathogen is a microorganism, such as a bacterium or virus, that causes disease in its host, be it plants, animals, or humans.</rdfs:comment>
+        <skos:exactMatch>http://purl.obolibrary.org/obo/IDO_0000528</skos:exactMatch>
+        <skos:exactMatch>http://www.purl.org/infection_trans#Pathogen</skos:exactMatch>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/decide#ProductionCycleTime -->
+
+    <owl:Class rdf:about="http://www.purl.org/decide#ProductionCycleTime">
+        <obo:IAO_0000117>PERSON: Saba</obo:IAO_0000117>
+        <rdfs:comment xml:lang="en">ProductionCycleTime refers to the duration of a specific production stage or the entire production process in aquaculture or livestock farming. 
+
+It is used to describe the time span from the beginning to the end of a defined stage (e.g., nursery, finishing) or the complete cycle.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/decide#Sample -->
+
+    <owl:Class rdf:about="http://www.purl.org/decide#Sample">
+        <obo:IAO_0000117>PERSON:Elena</obo:IAO_0000117>
+        <rdfs:comment xml:lang="en">A sample, such as a CattleSample, PigSample, or PoultrySample, refers to a specimen collected from respective animals for diagnostic or research purposes, often involving testing for diseases or analyzing biological parameters</rdfs:comment>
+        <rdfs:label>Sample</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/decide#SampleResult -->
+
+    <owl:Class rdf:about="http://www.purl.org/decide#SampleResult">
+        <obo:IAO_0000117>PERSON: Saba</obo:IAO_0000117>
+        <rdfs:comment xml:lang="en">SampleResult represents the outcome or findings derived from analyzing a specimen. It includes diagnostic findings, laboratory test values, pathogen detections, or other observed indicators used for decision-making in animal health and production contexts.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/decide#SampleType -->
+
+    <owl:Class rdf:about="http://www.purl.org/decide#SampleType">
+        <obo:IAO_0000117>PERSON: Saba</obo:IAO_0000117>
+        <rdfs:comment xml:lang="en">SampleType describes the kind of material or source from which a sample is collected for analysis. 
+
+Examples include blood, tissue, feces, milk, water, feed, or environmental swabs. 
+
+It is used to classify samples according to their origin and is essential for interpreting diagnostic and surveillance data.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/decide#SpeciesGroup -->
+
+    <owl:Class rdf:about="http://www.purl.org/decide#SpeciesGroup">
+        <obo:IAO_0000117>PERSON: Saba</obo:IAO_0000117>
+        <rdfs:comment>SpeciesGroup represents a group of animals belonging to the same species or production category 
+    (e.g., salmon, broiler chickens, weaned piglets, dairy cattle). 
+It is used to describe the target population involved in events such as sampling, treatment, or observation.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/decide#Statistics -->
+
+    <owl:Class rdf:about="http://www.purl.org/decide#Statistics">
+        <obo:IAO_0000117>PERSON: Saba</obo:IAO_0000117>
+        <rdfs:comment>Statistic represents a quantitative summary derived from one or more observations or measurements. 
+   
+ It includes values such as averages, percentages, rates, ratios, and counts used for describing or analyzing trends in animal health, disease, production, or diagnostic results.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/decide#Unit -->
+
+    <owl:Class rdf:about="http://www.purl.org/decide#Unit">
+        <obo:IAO_0000117>PERSON: Saba</obo:IAO_0000117>
+        <rdfs:comment>The class representing a unit of measurement or denomination. Instances of this class may include various units such as length units, weight units, time units, etc. It serves as a general category for expressing quantitative values in a standardized manner across different domains.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.purl.org/decide#Veterinarian -->
+
+    <owl:Class rdf:about="http://www.purl.org/decide#Veterinarian">
+        <obo:IAO_0000117>PERSON: Elena</obo:IAO_0000117>
+        <rdfs:comment>A Veterinarian is a qualified and licensed professional responsible for the health and welfare of animals. 
+    Veterinarians perform clinical examinations, diagnose diseases, prescribe treatments, and provide guidance on prevention, vaccination, and biosecurity in livestock and aquaculture settings.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/degreeCelsius -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/degreeCelsius">
+        <rdf:type rdf:resource="http://www.purl.org/decide#Unit"/>
+        <rdfs:label>degrees Celsius</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/kilogram -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/kilogram">
+        <rdf:type rdf:resource="http://www.purl.org/decide#Unit"/>
+        <rdfs:label>kilogram</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/milligramPerCubicmetre -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/milligramPerCubicmetre">
+        <rdf:type rdf:resource="http://www.purl.org/decide#Unit"/>
+        <rdfs:label>milligram Per Cubicmetre</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/tonne -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/tonne">
+        <rdf:type rdf:resource="http://www.purl.org/decide#Unit"/>
+        <rdfs:label>tonne</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.purl.org/decide#Biomass -->
+
+    <owl:NamedIndividual rdf:about="http://www.purl.org/decide#Biomass">
+        <rdf:type rdf:resource="http://www.purl.org/decide#MeasurementType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.purl.org/decide#Birth -->
+
+    <owl:NamedIndividual rdf:about="http://www.purl.org/decide#Birth">
+        <rdf:type rdf:resource="http://www.purl.org/decide#EventType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.purl.org/decide#BovineCoronaVirus -->
+
+    <owl:NamedIndividual rdf:about="http://www.purl.org/decide#BovineCoronaVirus">
+        <rdf:type rdf:resource="http://www.purl.org/decide#Pathogen"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.purl.org/decide#BovineRespiratorySyncitialVirus -->
+
+    <owl:NamedIndividual rdf:about="http://www.purl.org/decide#BovineRespiratorySyncitialVirus">
+        <rdf:type rdf:resource="http://www.purl.org/decide#Pathogen"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.purl.org/decide#HistophilusSomni -->
+
+    <owl:NamedIndividual rdf:about="http://www.purl.org/decide#HistophilusSomni">
+        <rdf:type rdf:resource="http://www.purl.org/decide#Pathogen"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.purl.org/decide#LabProcedure -->
+
+    <owl:NamedIndividual rdf:about="http://www.purl.org/decide#LabProcedure">
+        <rdf:type rdf:resource="http://www.purl.org/decide#EventType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.purl.org/decide#MannheimiaHaemolytica -->
+
+    <owl:NamedIndividual rdf:about="http://www.purl.org/decide#MannheimiaHaemolytica">
+        <rdf:type rdf:resource="http://www.purl.org/decide#Pathogen"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.purl.org/decide#Mass -->
+
+    <owl:NamedIndividual rdf:about="http://www.purl.org/decide#Mass">
+        <rdf:type rdf:resource="http://www.purl.org/decide#MeasurementType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.purl.org/decide#MeasurementFishFarm -->
+
+    <owl:NamedIndividual rdf:about="http://www.purl.org/decide#MeasurementFishFarm">
+        <rdf:type rdf:resource="http://www.purl.org/decide#EventType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.purl.org/decide#Mortality -->
+
+    <owl:NamedIndividual rdf:about="http://www.purl.org/decide#Mortality">
+        <rdf:type rdf:resource="http://www.purl.org/decide#MeasurementType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.purl.org/decide#MycoplasmaBovis -->
+
+    <owl:NamedIndividual rdf:about="http://www.purl.org/decide#MycoplasmaBovis">
+        <rdf:type rdf:resource="http://www.purl.org/decide#Pathogen"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.purl.org/decide#Other -->
+
+    <owl:NamedIndividual rdf:about="http://www.purl.org/decide#Other">
+        <rdf:type rdf:resource="http://www.purl.org/decide#Pathogen"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.purl.org/decide#ParainfluenzaType3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.purl.org/decide#ParainfluenzaType3">
+        <rdf:type rdf:resource="http://www.purl.org/decide#Pathogen"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.purl.org/decide#PasteurellaMultocida -->
+
+    <owl:NamedIndividual rdf:about="http://www.purl.org/decide#PasteurellaMultocida">
+        <rdf:type rdf:resource="http://www.purl.org/decide#Pathogen"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.purl.org/decide#SeaLiceCount -->
+
+    <owl:NamedIndividual rdf:about="http://www.purl.org/decide#SeaLiceCount">
+        <rdf:type rdf:resource="http://www.purl.org/decide#MeasurementType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.purl.org/decide#SeaSalinity -->
+
+    <owl:NamedIndividual rdf:about="http://www.purl.org/decide#SeaSalinity">
+        <rdf:type rdf:resource="http://www.purl.org/decide#MeasurementType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.purl.org/decide#SeaTemperature -->
+
+    <owl:NamedIndividual rdf:about="http://www.purl.org/decide#SeaTemperature">
+        <rdf:type rdf:resource="http://www.purl.org/decide#MeasurementType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.purl.org/decide#Slaughter -->
+
+    <owl:NamedIndividual rdf:about="http://www.purl.org/decide#Slaughter">
+        <rdf:type rdf:resource="http://www.purl.org/decide#EventType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.purl.org/decide#massPerUnitArea -->
+
+    <owl:NamedIndividual rdf:about="http://www.purl.org/decide#massPerUnitArea">
+        <rdf:type rdf:resource="http://www.purl.org/decide#Unit"/>
+        <rdfs:comment>kg/m3</rdfs:comment>
+        <rdfs:label>mass density</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.purl.org/decide#partPerTrillion -->
+
+    <owl:NamedIndividual rdf:about="http://www.purl.org/decide#partPerTrillion">
+        <rdf:type rdf:resource="http://www.purl.org/decide#Unit"/>
+        <rdfs:label>part per Trillion</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.purl.org/decide#ratePer1000 -->
+
+    <owl:NamedIndividual rdf:about="http://www.purl.org/decide#ratePer1000">
+        <rdf:type rdf:resource="http://www.purl.org/decide#Unit"/>
+        <rdfs:label>rate per 1000</rdfs:label>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+
